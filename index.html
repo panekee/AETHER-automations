@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AETHER Automation - Automatitza. Creix. Domina.</title>
+    <meta name="description" content="Convertim el teu negoci manual en màquina automàtica">
+    
+    <!-- TailwindCSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts - Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="font-inter">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white shadow-md z-50" id="navbar">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="text-2xl font-bold" style="color: #0066FF;">AETHER</a>
+                <div class="hidden md:flex space-x-6">
+                    <a href="index.html" class="nav-link">Inici</a>
+                    <a href="serveis.html" class="nav-link">Serveis</a>
+                    <a href="contacte.html" class="nav-link">Contacte</a>
+                </div>
+                <button class="md:hidden" id="menu-toggle" aria-label="Menu">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" style="color: #0066FF;">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+            <!-- Mobile Menu -->
+            <div class="hidden md:hidden mt-4" id="mobile-menu">
+                <a href="index.html" class="block py-2 nav-link">Inici</a>
+                <a href="serveis.html" class="block py-2 nav-link">Serveis</a>
+                <a href="contacte.html" class="block py-2 nav-link">Contacte</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section pt-32 pb-20 px-4">
+        <div class="container mx-auto text-center">
+            <div class="fade-in">
+                <h1 class="text-5xl md:text-7xl font-bold mb-6" style="color: #0066FF;">AETHER Automation</h1>
+                <p class="text-2xl md:text-3xl mb-4" style="color: #1a1a1a;">Automatitza. Creix. Domina.</p>
+                <p class="text-lg md:text-xl mb-8 opacity-80" style="color: #1a1a1a;">Convertim el teu negoci manual en màquina automàtica</p>
+                <a href="contacte.html" class="cta-button inline-block px-8 py-4 rounded-lg text-white font-bold text-lg transition-all hover:shadow-lg">
+                    Comença Ara
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-20 px-4 bg-gray-50">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-12 fade-in" style="color: #0066FF;">Els Nostres Serveis</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Service Card 1 -->
+                <div class="service-card bg-white p-8 rounded-lg shadow-md fade-in">
+                    <div class="w-16 h-16 rounded-full mb-6 flex items-center justify-center" style="background: linear-gradient(135deg, #0066FF, #00E5FF);">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4" style="color: #0066FF;">Email Automation</h3>
+                    <p class="mb-4" style="color: #1a1a1a;">Automatitza els teus emails de màrqueting, seguiment i comunicació amb clients. Estalvia hores cada setmana.</p>
+                    <a href="serveis.html#email" class="text-sm font-semibold" style="color: #00E5FF;">Saber més →</a>
+                </div>
+
+                <!-- Service Card 2 -->
+                <div class="service-card bg-white p-8 rounded-lg shadow-md fade-in">
+                    <div class="w-16 h-16 rounded-full mb-6 flex items-center justify-center" style="background: linear-gradient(135deg, #0066FF, #00E5FF);">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4" style="color: #0066FF;">Social Media</h3>
+                    <p class="mb-4" style="color: #1a1a1a;">Gestiona i programa les teves publicacions a les xarxes socials de forma automàtica. Augmenta la teva presència online.</p>
+                    <a href="serveis.html#social" class="text-sm font-semibold" style="color: #00E5FF;">Saber més →</a>
+                </div>
+
+                <!-- Service Card 3 -->
+                <div class="service-card bg-white p-8 rounded-lg shadow-md fade-in">
+                    <div class="w-16 h-16 rounded-full mb-6 flex items-center justify-center" style="background: linear-gradient(135deg, #0066FF, #00E5FF);">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4" style="color: #0066FF;">CRM</h3>
+                    <p class="mb-4" style="color: #1a1a1a;">Sistema de gestió de relacions amb clients automatitzat. Millora la teva productivitat i augmenta les vendes.</p>
+                    <a href="serveis.html#crm" class="text-sm font-semibold" style="color: #00E5FF;">Saber més →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="py-20 px-4">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-12 fade-in" style="color: #0066FF;">Per què AETHER?</h2>
+            <div class="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
+                <div class="fade-in">
+                    <div class="flex items-start mb-4">
+                        <div class="w-8 h-8 rounded-full mr-4 flex-shrink-0 flex items-center justify-center" style="background-color: #00E5FF;">
+                            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2" style="color: #0066FF;">Estalvia Temps</h3>
+                            <p style="color: #1a1a1a;">Automatitza les teves tasques repetitives i recupera hores cada dia per centrar-te en el que realment importa.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fade-in">
+                    <div class="flex items-start mb-4">
+                        <div class="w-8 h-8 rounded-full mr-4 flex-shrink-0 flex items-center justify-center" style="background-color: #00E5FF;">
+                            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2" style="color: #0066FF;">Augmenta Productivitat</h3>
+                            <p style="color: #1a1a1a;">Treballa més intel·ligent, no més dur. Les nostres solucions et permeten fer més amb menys esforç.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fade-in">
+                    <div class="flex items-start mb-4">
+                        <div class="w-8 h-8 rounded-full mr-4 flex-shrink-0 flex items-center justify-center" style="background-color: #00E5FF;">
+                            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2" style="color: #0066FF;">Escalable</h3>
+                            <p style="color: #1a1a1a;">Les nostres solucions creixen amb el teu negoci. Des de startups fins a empreses consolidades.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fade-in">
+                    <div class="flex items-start mb-4">
+                        <div class="w-8 h-8 rounded-full mr-4 flex-shrink-0 flex items-center justify-center" style="background-color: #00E5FF;">
+                            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2" style="color: #0066FF;">Soporte Continu</h3>
+                            <p style="color: #1a1a1a;">Equip dedicat per ajudar-te en cada pas. No estàs sol en aquest viatge cap a l'automatització.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="py-20 px-4" style="background: linear-gradient(135deg, #0066FF, #00E5FF);">
+        <div class="container mx-auto text-center">
+            <div class="fade-in">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6 text-white">Llest per automatitzar el teu negoci?</h2>
+                <p class="text-xl mb-8 text-white opacity-90">Contacta amb nosaltres avui i descobreix com podem ajudar-te a créixer.</p>
+                <a href="contacte.html" class="cta-button-white inline-block px-8 py-4 rounded-lg bg-white font-bold text-lg transition-all hover:shadow-lg" style="color: #0066FF;">
+                    Contacta Ara
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8 px-4">
+        <div class="container mx-auto text-center">
+            <p class="mb-2">&copy; 2024 AETHER Automation. Tots els drets reservats.</p>
+            <p class="text-sm opacity-75">Automatitza. Creix. Domina.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
